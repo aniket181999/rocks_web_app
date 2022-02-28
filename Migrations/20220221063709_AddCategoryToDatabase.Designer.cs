@@ -11,8 +11,8 @@ using WebApplication1.Data;
 namespace Info.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20220216061031_AddProductToDatabase")]
-    partial class AddProductToDatabase
+    [Migration("20220221063709_AddCategoryToDatabase")]
+    partial class AddCategoryToDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

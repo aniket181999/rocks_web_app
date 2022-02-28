@@ -1,4 +1,6 @@
 ﻿using Info.Models;
+using Info.Models.ViewModel;
+using Info.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using WebApplication1.Data;
@@ -43,8 +45,12 @@ namespace Info.Controllers
 
             });
             // For viewing dropdown
-            ViewBag.CategoryDropdown = CategoryDropdown;   
+            ViewData["CategoryDropdown"] = CategoryDropdown;
             Product product = new Product();
+
+
+
+
             if (id == null)
             {
                 return View(product);
